@@ -1,0 +1,538 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard Three | Notika - Notika Admin Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- jvectormap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <!-- notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/notika-custom-icon.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/wave/waves.min.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="#"><img src="../static/img/logo/logo.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40"></div>
+    <!-- Main Menu area End-->
+    <!-- Start Sale Statistic area-->
+    <div class="sale-statistic-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sale-statistic-inner notika-shadow mg-tb-30">
+                        <div class="curved-inner-pro">
+                            <div class="curved-ctn">
+                                <h2>Load time by location</h2>
+                                <p>Thời gian tải trang của người dùng theo vị trí địa lý</p>
+                            </div>
+                        </div>
+                        <div id="bar-chart" class="flot-chart bar-three bar-hm-three"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="sale-statistic-inner notika-shadow mg-tb-30">
+                        <div class="curved-inner-pro">
+                            <div class="curved-ctn">
+                                <h2>Load time by ISP</h2>
+                                <p>Thời gian tải trang của người dùng theo các nhà mạng</p>
+                            </div>
+                        </div>
+                        <div id="isp-bar-chart" class="flot-chart bar-three bar-hm-three"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Sale Statistic area-->
+    <!-- Start Email Statistic area-->
+    <div class="notika-email-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>Recent Items</h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <table class="table table-inner table-vmiddle">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th style="width: 60px">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="f-500 c-cyan">4555</td>
+                                            <td>Samsung Galaxy Mega</td>
+                                            <td class="f-500 c-cyan">$921</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">4556</td>
+                                            <td>Huawei Ascend P6</td>
+                                            <td class="f-500 c-cyan">$240</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">8778</td>
+                                            <td>HTC One M8</td>
+                                            <td class="f-500 c-cyan">$400</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">5667</td>
+                                            <td>Samsung Galaxy Alpha</td>
+                                            <td class="f-500 c-cyan">$870</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="f-500 c-cyan">7886</td>
+                                            <td>LG G3</td>
+                                            <td class="f-500 c-cyan">$790</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+							<div id="recent-items-chart" class="flot-chart-items flot-chart vt-ct-it tb-rc-it-res"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email Statistic area-->
+    <!-- Start Realtime sts area-->
+    <div class="realtime-statistic-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="realtime-wrap notika-shadow mg-t-30">
+                        <div class="realtime-ctn">
+                            <div class="realtime-title">
+                                <h2>Realtime Visitors</h2>
+                            </div>
+                        </div>
+                        <div class="realtime-visitor-ctn">
+                            <div class="realtime-vst-sg">
+                                <h4><span class="counter">4,35,456</span></h4>
+                                <p>Visitors last 24h</p>
+                            </div>
+                            <div class="realtime-vst-sg">
+                                <h4><span class="counter">4,566</span></h4>
+                                <p>Visitors last 30m</p>
+                            </div>
+                        </div>
+                        <div class="realtime-map">
+                            <div class="vectorjsmarp" id="world-map"></div>
+                        </div>
+                        <div class="realtime-country-ctn realtime-ltd-mg">
+                            <h5>September 4, 21:44:02 (2 Mins 56 Seconds)</h5>
+                            <div class="realtime-ctn-bw">
+                                <div class="realtime-ctn-st">
+                                    <span><img src="../static/img/country/1.png" alt="" /></span> <span>United States</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Firefox</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Mac OSX</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="realtime-country-ctn">
+                            <h5>September 7, 20:44:02 (5 Mins 56 Seconds)</h5>
+                            <div class="realtime-ctn-bw">
+                                <div class="realtime-ctn-st">
+                                    <span><img src="../static/img/country/2.png" alt="" /></span> <span>Australia</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Firefox</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Mac OSX</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="realtime-country-ctn">
+                            <h5>September 9, 19:44:02 (10 Mins 56 Seconds)</h5>
+                            <div class="realtime-ctn-bw">
+                                <div class="realtime-ctn-st">
+                                    <span><img src="../static/img/country/3.png" alt="" /></span> <span>Brazil</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Firefox</span>
+                                </div>
+                                <div class="realtime-bw">
+                                    <span>Mac OSX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="add-todo-list notika-shadow mg-t-30">
+                        <div class="realtime-ctn">
+                            <div class="realtime-title">
+                                <h2>Add Todo</h2>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="todoapp">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h4 id="todo-message"><span id="todo-remaining"></span> of <span id="todo-total"></span> remaining</h4>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="notika-todo-btn">
+                                            <a href="#" class="pull-right btn btn-primary btn-sm" id="btn-archive">Archive</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notika-todo-scrollbar">
+                                    <ul class="list-group no-margn todo-list" id="todo-list"></ul>
+                                </div>
+                                <div id="todo-form">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12 todo-inputbar">
+                                            <div class="form-group todo-flex">
+                                                <div class="nk-int-st">
+                                                    <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" placeholder="Add new todo">
+                                                </div>
+                                                <div class="todo-send">
+                                                    <button class="btn-primary btn-md btn-block btn notika-add-todo" type="button" id="todo-btn-submit">Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="notika-chat-list notika-shadow mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="realtime-ctn">
+                            <div class="realtime-title">
+                                <h2>Chat Box</h2>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="chat-conversation">
+                                <div class="widgets-chat-scrollbar">
+                                    <ul class="conversation-list">
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/1.jpg" alt="male">
+                                                <i>10:00</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>John Deo</i>
+                                                    <p>
+                                                        Hello!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/2.jpg" alt="Female">
+                                                <i>10:01</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Smith</i>
+                                                    <p>
+                                                        Hi, How are you? What about our next meeting?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/1.jpg" alt="male">
+                                                <i>10:01</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>John Deo</i>
+                                                    <p>
+                                                        Yeah everything is fine
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/2.jpg" alt="male">
+                                                <i>10:02</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Smith</i>
+                                                    <p>
+                                                        Wow that's great
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/1.jpg" alt="male">
+                                                <i>10:01</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>John Deo</i>
+                                                    <p>
+                                                        Doing Better i am thinking about that..
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                                <img src="../static/img/post/2.jpg" alt="male">
+                                                <i>10:02</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Smith</i>
+                                                    <p>
+                                                        Wow, You also tallent man...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chat-widget-input">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12 chat-inputbar">
+                                            <div class="form-group todo-flex">
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="form-control chat-input" placeholder="Enter your text">
+                                                </div>
+                                                <div class="chat-send">
+                                                    <button type="submit" class="btn btn-md btn-primary btn-block notika-chat-btn">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Realtime sts area-->
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2018 
+. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+    <!-- jquery
+		============================================ -->
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="../static/js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="../static/js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="../static/js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="../static/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+		============================================ -->
+    <script src="../static/js/counterup/jquery.counterup.min.js"></script>
+    <script src="../static/js/counterup/waypoints.min.js"></script>
+    <script src="../static/js/counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="../static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- jvectormap JS
+		============================================ -->
+    <script src="../static/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="../static/js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../static/js/jvectormap/jvectormap-active.js"></script>
+    <!-- sparkline JS
+		============================================ -->
+    <script src="../static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../static/js/sparkline/sparkline-active.js"></script>
+    <!-- flot JS
+		============================================ -->
+    <script src="../static/js/flot/jquery.flot.js"></script>
+    <script src="../static/js/flot/jquery.flot.resize.js"></script>
+    <script src="../static/js/flot/jquery.flot.pie.js"></script>
+    <script src="../static/js/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/js/flot/jquery.flot.orderBars.js"></script>
+    <script src="../static/js/flot/curvedLines.js"></script>
+    <script src="../static/js/flot/flot-active.js"></script>
+    <!-- knob JS
+		============================================ -->
+    <script src="../static/js/knob/jquery.knob.js"></script>
+    <script src="../static/js/knob/jquery.appear.js"></script>
+    <script src="../static/js/knob/knob-active.js"></script>
+    <!--  wave JS
+		============================================ -->
+    <script src="../static/js/wave/waves.min.js"></script>
+    <script src="../static/js/wave/wave-active.js"></script>
+    <!--  Chat JS
+		============================================ -->
+	<script src="../static/js/chat/moment.min.js"></script>
+    <script src="../static/js/chat/jquery.chat.js"></script>
+    <!--  todo JS
+		============================================ -->
+    <script src="../static/js/todo/jquery.todo.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="../static/js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="../static/js/main.js"></script>
+	<!-- tawk chat JS
+		============================================ -->
+    <script src="../static/js/tawk-chat.js"></script>
+
+    <script>
+        $.plot($("#isp-bar-chart"), [ [["VNPT", 4.2], ["FPT", 3.5], ["Viettel", 5.5]] ], {
+            series: {
+                bars: {
+                    show: !0,
+                    barWidth: .05,
+                    order: 1,
+                    fill: 1
+                }
+            },
+            grid: {
+                borderWidth: 1,
+                borderColor: "#eee",
+                show: !0,
+                hoverable: !0,
+                clickable: !0
+            },
+            yaxis: {
+                tickColor: "#eee",
+                tickDecimals: 0,
+                font: {
+                    lineHeight: 14,
+                    style: "normal",
+                    color: "#00c292"
+                },
+                shadowSize: 0
+            },
+            xaxis: {
+                tickColor: "#fff",
+                tickDecimals: 0,
+                font: {
+                    lineHeight: 14,
+                    style: "normal",
+                    color: "#00c292"
+                },
+                shadowSize: 0
+            },
+            legend: {
+                container: ".flc-bar",
+                backgroundOpacity: .5,
+                noColumns: 0,
+                backgroundColor: "white",
+                lineWidth: 0
+            }
+        });
+    </script>
+</body>
+
+</html>
