@@ -48,6 +48,9 @@
     <!-- wave CSS
 		============================================ -->
     <link rel="stylesheet" href="../static/css/wave/waves.min.css">
+    <!-- ChartJS CSS
+		============================================ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="../static/css/style.css">
@@ -95,7 +98,8 @@
                                 <p>Thời gian tải trang của người dùng theo vị trí địa lý</p>
                             </div>
                         </div>
-                        <div id="bar-chart" class="flot-chart bar-three bar-hm-three"></div>
+                        <canvas id="location-bar-chart" width="400" height="400"></canvas>
+                        <!-- <div id="bar-chart" class="flot-chart bar-three bar-hm-three"></div> -->
                     </div>
                 </div>
 
@@ -107,7 +111,8 @@
                                 <p>Thời gian tải trang của người dùng theo các nhà mạng</p>
                             </div>
                         </div>
-                        <div id="isp-bar-chart" class="flot-chart bar-three bar-hm-three"></div>
+                        <!-- <div id="isp-bar-chart" class="flot-chart bar-three bar-hm-three"></div> -->
+                        <canvas id="isp-bar-chart" width="400" height="400"></canvas>
                     </div>
                 </div>
 
@@ -406,7 +411,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="footer-copy-right">
-                        <p>Copyright © 2018 
+                        <p>Copyright © 2018
 . All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
                     </div>
                 </div>
@@ -480,58 +485,79 @@
     <!-- plugins JS
 		============================================ -->
     <script src="../static/js/plugins.js"></script>
+    <!-- ChartJS
+		============================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <!-- main JS
 		============================================ -->
     <script src="../static/js/main.js"></script>
 	<!-- tawk chat JS
 		============================================ -->
     <script src="../static/js/tawk-chat.js"></script>
-
     <script>
-        $.plot($("#isp-bar-chart"), [ [["VNPT", 4.2], ["FPT", 3.5], ["Viettel", 5.5]] ], {
-            series: {
-                bars: {
-                    show: !0,
-                    barWidth: .05,
-                    order: 1,
-                    fill: 1
-                }
-            },
-            grid: {
-                borderWidth: 1,
-                borderColor: "#eee",
-                show: !0,
-                hoverable: !0,
-                clickable: !0
-            },
-            yaxis: {
-                tickColor: "#eee",
-                tickDecimals: 0,
-                font: {
-                    lineHeight: 14,
-                    style: "normal",
-                    color: "#00c292"
-                },
-                shadowSize: 0
-            },
-            xaxis: {
-                tickColor: "#fff",
-                tickDecimals: 0,
-                font: {
-                    lineHeight: 14,
-                    style: "normal",
-                    color: "#00c292"
-                },
-                shadowSize: 0
-            },
-            legend: {
-                container: ".flc-bar",
-                backgroundOpacity: .5,
-                noColumns: 0,
-                backgroundColor: "white",
-                lineWidth: 0
+    var ctx = document.getElementById('location-bar-chart');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Hanoi', 'Ho Chi Minh'],
+            datasets: [{
+                label: '# of Seconds',
+                data: [4.2, 3.86],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 206, 86, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
             }
-        });
+        }
+    });
+    </script>
+    <script>
+    var ctx = document.getElementById('isp-bar-chart');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['VNPT', 'FPT', 'VIETTEL'],
+            datasets: [{
+                label: '# of Seconds',
+                data: [4.2, 5.84, 6.06],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(75, 192, 192, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
     </script>
 </body>
 
